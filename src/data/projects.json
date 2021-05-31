@@ -1,0 +1,32 @@
+[
+  {
+  "title" : "Gestion de projet",
+  "description":"Personnalisez les champs et catégories selon la structure/besoin de votre entreprise afin d'optimiser le pilotage de vos projets",
+  "keyPhoto":"project4"
+},
+  {
+  "title" : "Application CRM",
+  "description":"Gérez les interventions de vos équipes techniques directement depuis une interface dédiée, consultez l’état d’intervention en direct et instantanément",
+  "keyPhoto":"project3"
+},
+  {
+  "title" : "Rosa Pink",
+  "description":"Gardez sous la main les coordonnées de vos employés ou que vous soyez",
+  "keyPhoto":"project2"
+},
+  {
+  "title" : "Shun Dash",
+  "description":"Petit jeu de mémorisation, partagez votre score avec vos amis et challengez-les !",
+  "keyPhoto":"project1"
+},
+  {
+  "title" : "Batiiz",
+  "description":"Application pour les professionnels permettant la recherche de sous-traitant ou d’intérimaire pour finaliser vos chantiers.",
+  "keyPhoto":"project5"
+},
+  {
+  "title" : "Et si c’était vous ?",
+  "description":"Rendez-vous sur la page Devis 😉",
+  "keyPhoto":"project6"
+}
+]

@@ -1,0 +1,106 @@
+.cgu {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 50px 10px;
+  position: fixed;
+  height: 150px;
+  width: 90%;
+  background-color: white;
+  padding-top: 40px;
+}
+
+.logo {
+  height: 75px;
+  width: auto;
+}
+
+.goBack {
+  height: 50px;
+  width: auto;
+}
+
+.goBackDiv {
+  height: 50px;
+  height: 50px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.goBackDiv :hover {
+  cursor: pointer;
+}
+
+.headerTitle {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #3a42ff;
+  font-family: Montserrat-Bold;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 35px;
+  z-index: 0;
+}
+
+.content {
+  width: 75%;
+  margin: auto;
+  padding-top: 150px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 10px 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.strong {
+  font-weight: bold;
+  margin: 10px 0 2px;
+}
+
+@media screen and (max-width: 1080px) {
+  .header {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 190px;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .headerTitle {
+    top: 65px;
+  }
+  .content {
+    width: 85%;
+    padding-top: 190px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .logo {
+    height: 55px;
+  }
+
+  .goBackDiv {
+    height: 35px;
+    width: 35px;
+  }
+
+  .goBack {
+    height: 35px;
+  }
+}

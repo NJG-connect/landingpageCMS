@@ -1,0 +1,158 @@
+.selectProjectDevis {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 20px;
+  font-family: Montserrat-Bold;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contentScroll {
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-bottom: 20px;
+}
+
+.contentScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.cardProject {
+  max-width: 250px;
+  height: 150px;
+  border: 1px solid #d4d3d3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 40px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.cardProject :hover {
+  cursor: pointer;
+}
+
+.cardProjectSelected {
+  border: 3px solid #656cff;
+}
+
+.cardProjectMax {
+  min-width: 160px;
+  width: 160px;
+}
+.cardProjectMin {
+  min-width: 125px;
+  width: 125px;
+}
+
+.projectTitle {
+  font-weight: bold;
+  text-align: center;
+}
+
+.projectDescription {
+  text-align: center;
+}
+
+.projectImage {
+  height: auto;
+  width: 65px;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0px;
+}
+
+.button {
+  height: 55px;
+  width: 250px;
+  background-color: #3a42ff;
+  border-radius: 30px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-family: Montserrat-SemiBold;
+  color: white;
+}
+
+.supporTitle {
+  color: #707070;
+  font-weight: bold;
+  text-align: center;
+}
+
+.desc {
+  margin: 30px 0;
+  padding-right: 10px;
+}
+
+.subContent {
+  font-family: Montserrat-semiBold;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.dateField {
+  width: 180px;
+  margin-top: 12px;
+  border-color: #3a42ff;
+}
+
+.contentTextArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textArea {
+  width: 70%;
+  max-width: 550px;
+  height: 130px;
+}
+
+.sliderWrapper {
+  width: 90%;
+}
+
+@media screen and (max-width: 1190px) {
+  .contentScroll {
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contentScroll {
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
+  .contentScroll::after {
+    content: "";
+    padding-right: 0.02px;
+  }
+  .title {
+    margin-left: 10px;
+  }
+  .subContent {
+    margin-left: 10px;
+  }
+
+  .cardProject {
+    margin-right: 15px;
+  }
+}

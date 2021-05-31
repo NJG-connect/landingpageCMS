@@ -1,0 +1,75 @@
+.card {
+  height: 200px;
+  width: 260px;
+  min-width: 230px;
+  border: 1px solid #707070;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 13px 10px 6px #00000029;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.card:last-child {
+  margin-right: 20px;
+}
+
+.header {
+  display: flex;
+  flex: 0.25;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-family: Montserrat-semiBold;
+}
+
+.checkbox {
+  display: flex;
+  width: 30px;
+  height: auto;
+}
+
+.separator {
+  width: 100px;
+  height: 5px;
+  margin-left: 20px;
+  border-radius: 6px;
+  background: #656cff;
+}
+
+.description {
+  display: flex;
+  flex: 0.45;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 12.5px;
+}
+
+.logoPart {
+  display: flex;
+  flex: 0.3;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.divImageForm {
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #656cff;
+  border-radius: 50%;
+}
+
+.imageForm {
+  height: auto;
+  width: 25px;
+}

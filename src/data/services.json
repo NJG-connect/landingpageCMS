@@ -1,0 +1,31 @@
+[{
+  "title" : "Communication Graphisme",
+  "description":"Réédition / Création de logo, d’une charte graphique, cartes de visites, flyers, images et bien plus encore...",
+  "logo" : "pain",
+  "subDescription": "Vous souhaitez parfaire votre identité graphique en passant par une identité visuel claire, des documents professionnels et dans l’air du temps.\n \n <b>Préparez-vous à faire sensation auprès de vos clients !</b>"
+},
+
+{
+  "title" : "Développement",
+  "description":"Création d'application mobile, de site internet, Intranet, ERP, ou d'une plateforme de facturation en ligne",
+  "logo" : "mobileAndWeb",
+  "subDescription": "Que ce soit simplement de la gestion de personnel, de matériel, ou encore le développement de votre visibilité sur les moteurs de recherche par la création d'un site internet. \n \n <b>Nous vous outillons dans l'optimisation de vos process</b>"
+},
+
+{
+  "title" : "Conseils Expertises",
+  "description":"Vous ne savez pas par ou commencer ? Aucun soucis, nous nous rendons chez vous et diagnostiquons des pistes d'améliorations",
+  "logo" : "medicinal"
+},
+{
+  "title" : "Solution Flex",
+  "description":"Composez votre solution selon vos besoins et nous vous éditons un devis allégé sur mesure",
+  "logo" : "flex"
+},
+{
+  "title": "Découvrez notre brochure",
+  "logoDescription": "brochure",
+  "submit": "Découvrir",
+  "link": "pdf-link"
+}
+]

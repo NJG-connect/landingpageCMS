@@ -1,0 +1,65 @@
+.devis {
+  width: 100vw;
+  background-color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  scroll-behavior: smooth;
+  animation: borderAnimation 4s forwards, startAnimation 0.8s forwards,
+    MiniMyseAnimation 0.3s 0.7s forwards, ScaleAnimation 0.5s 0.9s forwards;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes startAnimation {
+  from {
+    top: +100%;
+    bottom: -100%;
+    transform: scale(0.9);
+  }
+  to {
+    bottom: 0;
+    top: 0;
+    transform: scale(0.9);
+  }
+}
+@keyframes MiniMyseAnimation {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(0.87);
+  }
+}
+@keyframes ScaleAnimation {
+  from {
+    transform: scale(0.87);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes borderAnimation {
+  from {
+    border: 1px solid black;
+  }
+  to {
+    border: 0px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contentForOptionDevis {
+    display: initial;
+  }
+}

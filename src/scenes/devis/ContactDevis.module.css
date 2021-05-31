@@ -1,0 +1,150 @@
+.contact {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  width: 700px;
+  border: 1px solid #707070;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.timbreDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 20px;
+  padding-right: 20px;
+  flex: 0.5;
+  position: relative;
+}
+
+.imageStamp {
+  width: 100px;
+  height: auto;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0px;
+}
+
+.button {
+  height: 55px;
+  width: 250px;
+  background-color: #3a42ff;
+  border-radius: 30px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-family: Montserrat-SemiBold;
+  color: white;
+  cursor: pointer;
+}
+
+.button :hover {
+  cursor: pointer;
+}
+
+.title {
+  display: none;
+  margin-bottom: 30px;
+}
+
+.stampIsReady {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.stamp {
+  opacity: 0;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  right: 25px;
+  top: 60px;
+  border-radius: 5px;
+  display: flex;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+    transform-origin: 50% 50%;
+    transform: rotate(-2deg) scale(5);
+    transition: all 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-15deg) scale(1);
+  }
+}
+
+.imageSend {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  opacity: 1;
+}
+
+.isSending {
+  background-color: #707070;
+  cursor: progress;
+}
+
+.isSending :hover {
+  cursor: progress;
+}
+
+@media screen and (max-width: 702px) {
+  .content {
+    border: 0;
+    width: auto;
+  }
+
+  .title {
+    display: block;
+  }
+
+  .form {
+    flex: 1;
+  }
+  .timbreDiv {
+    display: none;
+  }
+}
+@media screen and (max-width: 310px) {
+  .form {
+    padding-left: 30px;
+  }
+  .title {
+    margin-left: -30px;
+  }
+}

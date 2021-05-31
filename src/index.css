@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url(./assets/fonts/Montserrat-Black.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: local("Montserrat-Regular"),
+    url(./assets/fonts/Montserrat-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: local("Montserrat-SemiBold"),
+    url(./assets/fonts/Montserrat-SemiBold.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  src: local("Montserrat-Light"),
+    url(./assets/fonts/Montserrat-Light.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Italic";
+  src: local("Montserrat-Italic"),
+    url(./assets/fonts/Montserrat-Italic.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: local("Montserrat-Bold"),
+    url(./assets/fonts/Montserrat-Bold.ttf) format("truetype");
+  font-display: swap;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: Montserrat-Regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 200;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+
+#root {
+  /* overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  width: 100%;
+  height: 100%; */
+}
+
+p,
+img,
+h1,
+h2,
+label {
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+div {
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none;
+}
+
+p,
+h1,
+h2,
+pre,
+button,
+a {
+  margin: 0;
+  padding: 0;
+}
+button,
+a {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+html,
+#root {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html,
+  #root {
+    scroll-behavior: auto;
+  }
+}

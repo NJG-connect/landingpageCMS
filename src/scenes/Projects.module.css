@@ -1,0 +1,142 @@
+.projects {
+  width: 100vw;
+  position: relative;
+}
+
+#container {
+  background: linear-gradient(#656cff, #252559);
+  padding-top: 40px;
+  padding-bottom: 45px;
+  position: relative;
+}
+
+.title {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 30px;
+  margin-top: -1px;
+  margin-left: 35px;
+}
+.contentDesc {
+  margin-left: calc(40% + 235px);
+  margin-right: 35px;
+  align-self: center;
+  text-align: center;
+}
+
+.titleCard {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Montserrat-Bold;
+  margin-bottom: 20px;
+}
+
+.animationCardFirstCard {
+  animation: tryAnimationOne 2s step-end;
+}
+
+.animationCardTrue {
+  animation: tryAnimationOne 3s;
+}
+
+.animationCardFalse {
+  animation: tryAnimationTwo 3s;
+}
+
+.description {
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.content {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 500px;
+  will-change: transform;
+  display: flex;
+}
+
+.card {
+  position: absolute;
+  will-change: transform;
+  left: 25%;
+  cursor: url("./../assets/images/drag.png"), auto;
+}
+
+.cardContent {
+  background-color: white;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+  /* box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
+    0 10px 10px -10px rgba(50, 50, 73, 0.3); */
+  will-change: transform;
+  width: 235px;
+  height: 430px;
+}
+
+@media screen and (max-width: 800px) {
+  .contentDesc {
+    margin-left: 35px;
+    margin-top: 450px;
+  }
+  .titleCard {
+    display: none;
+  }
+  .card {
+    left: calc(50vw - 130px);
+  }
+  .content {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contentDesc {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 295px) {
+  .card {
+    left: 10%;
+  }
+
+  .contentDesc {
+    height: 150px;
+  }
+}
+
+@keyframes tryAnimationOne {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes tryAnimationOne {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes tryAnimationTwo {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}

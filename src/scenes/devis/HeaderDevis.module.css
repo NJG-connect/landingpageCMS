@@ -1,0 +1,123 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin: 40px 50px 10px;
+  position: relative;
+  height: 150px;
+  /* background-color: red; */
+}
+
+.logo {
+  height: 75px;
+  width: auto;
+}
+
+.goBack {
+  height: 50px;
+  width: auto;
+}
+
+.goBackDiv {
+  height: 50px;
+  height: 50px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.goBackDiv :hover {
+  cursor: pointer;
+}
+
+.headerTitle {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #3a42ff;
+  font-family: Montserrat-Bold;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 35px;
+  z-index: 0;
+}
+
+.lineStep {
+  height: 40px;
+  width: 250px;
+  padding: 0;
+  margin: 0 auto;
+  left: 0%;
+  right: 0%;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.timeline {
+  height: 2px;
+  align-self: center;
+  width: 100%;
+  background-color: #707070;
+  z-index: 0;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+}
+
+.bubbleTimeline {
+  z-index: 1;
+  height: 90%;
+  width: 36px;
+  aspect-ratio: 1;
+  border: 1px solid #707070;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #707070;
+}
+
+.bubbleTimelineDisabled {
+  cursor: pointer;
+}
+
+.bubbleTimelineActivated {
+  background-color: #707070;
+  border: 1px solid 707070;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 190px;
+    align-items: flex-start;
+  }
+
+  .headerTitle {
+    top: 65px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .logo {
+    height: 55px;
+  }
+
+  .goBackDiv {
+    height: 35px;
+    width: 35px;
+  }
+
+  .goBack {
+    height: 35px;
+  }
+}
