@@ -15,7 +15,7 @@ collections:
     folder: "datas/contacts" # The path to the folder where the documents are stored
     format: "json"
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Accès via l'url", name: "urlId", widget: "string" }
       - { label: "Nom", name: "lastname", widget: "string" }
