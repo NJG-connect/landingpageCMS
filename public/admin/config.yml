@@ -1,7 +1,9 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-
+  repo: github.com/NJG-connect/landingpageCMS
+  api_root: https://api.github.com
+  base_url: https://api.netlify.com
   # This line should *not* be indented
 publish_mode: editorial_workflow
 
