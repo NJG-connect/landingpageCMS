@@ -10,9 +10,9 @@ media_folder: "static/images" # Media files will be stored in the repo under sta
 public_folder: "/images"
 
 collections:
-    - name: "contacts" # Used in routes, e.g., /admin/collections/blog
-      label: "Contacts" # Used in the UI
-      files: "datas/contacts.json" # The path to the folder where the documents are stored
+    - name: "contactde" # Used in routes, e.g., /admin/collections/blog
+      label: "Contactsde" # Used in the UI
+      files: [datas/contacts.json] # The path to the folder where the documents are stored
       format: "json"
       create: true # Allow users to create new documents in this collection
       slug: "contact" # Filename template, e.g., YYYY-MM-DD-title.md
