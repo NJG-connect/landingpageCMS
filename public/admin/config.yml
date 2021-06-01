@@ -25,8 +25,9 @@ collections:
       - { label: "Email", name: "email", widget: "string" }
       - { label: "lien d'une photo", name: "photo", widget: "string" }
       - { label: "lien linkedIn", name: "linkedIn", widget: "string" }
- -  name: "pages"
+ - name: "pages"
    label: "Pages"
+   format: "json"
     files:
       - label: "About Page"
         name: "about"
