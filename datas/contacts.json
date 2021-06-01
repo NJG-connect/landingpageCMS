@@ -1,7 +1,27 @@
 {
-  "society": {
-    "name": "NJG Connect",
-    "web": "njgconnect.fr"
+  "society":{
+    "web" : "njgconnect.fr",
+    "name": "NJG Connect"
   },
-  "contacts": []
+  "contacts" : [ {
+    "urlId": "jonathan",
+    "lastname": "NOHILE",
+    "firstname": "Jonathan",
+    "phone": "07 56 99 74 93",
+    "role": "Solution digitale",
+    "email": "jonathan@njgconnect.fr",
+    "photo": "http://qrcgcustomers.s3-eu-west-1.amazonaws.com/account11910561/12356787_1.png?0.13628124354534954",
+    "linkedIn": "https://www.linkedin.com/in/jonathan-nohile"
+  },
+  {
+    "urlId": "jeremy",
+    "lastname": "NOHILE",
+    "firstname": "Jeremy",
+    "phone": "06 35 45 50 28",
+    "role": "Solution digitale",
+    "email": "jeremy.nohile@gmail.com",
+    "photo": "https://media-exp1.licdn.com/dms/image/C4D03AQEOplsn8IfnTg/profile-displayphoto-shrink_400_400/0/1570435774615?e=1623283200&v=beta&t=FZwjsyKHLGGyIF27RYFVQoyGwNj7PqbkW7EWjexEokY",
+    "linkedIn": "https://www.linkedin.com/in/jeremynohile"
+  }]
+  
 }
