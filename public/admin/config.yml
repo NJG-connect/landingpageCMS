@@ -25,8 +25,8 @@ collections:
       - { label: "Email", name: "email", widget: "string" }
       - { label: "lien d'une photo", name: "photo", widget: "string" }
       - { label: "lien linkedIn", name: "linkedIn", widget: "string" }
- - label: "Pages"
-    name: "pages"
+ -  name: "pages"
+   label: "Pages"
     files:
       - label: "About Page"
         name: "about"
@@ -34,10 +34,3 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
