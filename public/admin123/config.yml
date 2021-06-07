@@ -4,19 +4,18 @@ backend:
   repo: github.com/NJG-connect/landingpageCMS
   api_root: https://api.github.com
   base_url: https://api.netlify.com
-  display_url: https://lucid-ride-4187d2.netlify.app/
-  logo_url: https://lucid-ride-4187d2.netlify.app/static/media/logo.e080c486.svg
+  display_url: https://njgconnect-cms.netlify.app/
+  site_url: https://njgconnect-cms.netlify.app/
+logo_url: https://njgconnect-cms.netlify.app/static/media/logo.e080c486.svg
 
   # This line should *not* be indented
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 
 # These lines should *not* be indented
 media_folder: "static/images" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images"
 
 collections:
-- name: "contacts" # Used in routes, e.g., /admin/collections/blog
-  label: "Contacts" # Used in the UI
   files: # The path to the folder where the documents are stored
     - label: "Contact"
       name: "contact"
