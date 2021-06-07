@@ -4,6 +4,9 @@ backend:
   repo: github.com/NJG-connect/landingpageCMS
   api_root: https://api.github.com
   base_url: https://api.netlify.com
+  display_url: https://lucid-ride-4187d2.netlify.app/
+  logo_url: https://lucid-ride-4187d2.netlify.app/static/media/logo.e080c486.svg
+
   # This line should *not* be indented
 publish_mode: editorial_workflow
 
