@@ -26,4 +26,4 @@ function slugify(string) {
 //   client_payload.title
 // )}`;
 
-fs.writeFileSync(`submissions/test.json`, JSON.stringify(client_payload));
+fs.writeFileSync(`./submissions/test.json`, JSON.stringify(client_payload));
