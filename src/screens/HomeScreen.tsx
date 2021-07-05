@@ -1,5 +1,10 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
-import { FloatButton, FloatButtonDevis, CookiesToaster } from "../components";
+import {
+  FloatButton,
+  FloatButtonDevis,
+  CookiesToaster,
+  AdminPanel,
+} from "../components";
 import { ToastContext } from "../contexts/ToastContext";
 import { UserInfoContext } from "../contexts/UserInfoContext";
 import {
@@ -114,6 +119,7 @@ function HomeScreen(props: any) {
         <Devis sendEmail={handleSendEmail} onClose={() => setdoADevis(false)} />
       )}
       <Footer />
+      <AdminPanel />
     </>
   );
 }

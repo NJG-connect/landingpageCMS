@@ -4,6 +4,7 @@ import FloatButton from './FloatButton';
 import Toast from './Toast';
 import FloatButtonDevis from './FloatButtonDevis';
 import CookiesToaster from './CookiesToaster';
+import AdminPanel from './AdminPanel';
 
 export {
   FlipCard,
@@ -12,4 +13,5 @@ export {
   Toast,
   FloatButtonDevis,
   CookiesToaster,
+  AdminPanel,
 };
