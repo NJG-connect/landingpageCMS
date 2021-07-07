@@ -1,12 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext",
-      "ES2019.Array"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext", "ES2019.Array"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -22,7 +17,5 @@
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-, "actions"  ]
+  "include": ["src", "actions"]
 }
