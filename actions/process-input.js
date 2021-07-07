@@ -26,7 +26,12 @@ const fs = require("fs");
 //   client_payload.title
 // )}`;
 
-fs.writeFileSync(
-  `/submissions/test.json`,
-  JSON.stringify({ data: "exemple", title: "title" })
-);
+try {
+  fs.writeFileSync(
+    __dirname + `/../submissions/test.json`,
+    JSON.stringify({ data: "exemple", title: "title" })
+  );
+} catch (error) {
+  console.log("error");
+  console.log(error);
+}
