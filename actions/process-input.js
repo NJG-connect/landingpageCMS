@@ -28,7 +28,7 @@ const fs = require("fs");
 
 try {
   fs.writeFileSync(
-    __dirname + `/../submissions/test.json`,
+    __dirname + `/../test.json`,
     JSON.stringify({ data: "exemple", title: "title" })
   );
 } catch (error) {
