@@ -14,8 +14,9 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Process input
-      - run: npm install fs
-      - run: node actions/process-input.js
+        run: |
+          npm install fs
+          node actions/process-input.js
       - name: Run prettier
         run: |
           npx prettier submissions/*.json --write
