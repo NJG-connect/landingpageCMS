@@ -33,9 +33,10 @@ jobs:
             ## by ${{ github.event.client_payload.name }}
             > ${{ github.event.client_payload.description }}
           labels: submission
-      ## To deploy on GitHub Pages
-      - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v1
+      ## Allow Allow auto-merge 
+      - name: Enable Pull Request Automerge
+        if: steps.cpr.outputs.pull-request-operation == 'created'
+        uses: peter-evans/enable-pull-request-automerge@v1
         with:
-          token: ${{ secrets.GH_TOKEN_PERSONAL }}
-          event-type: trigger-deploy
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          merge-method: squash
