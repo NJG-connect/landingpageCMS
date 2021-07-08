@@ -22,21 +22,7 @@ jobs:
       - name: Run prettier
         run: |
           npx prettier "./*.json" --write
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
+      - name: Push to github
+        uses: actions-x/commit@v2
         with:
           token: ${{ secrets.GH_TOKEN_PERSONAL }}
-          branch-suffix: random
-          title: "feat(submission): ${{ github.event.client_payload.name }} - ${{ github.event.client_payload.title }}"
-          body: |
-            # ${{ github.event.client_payload.title }}
-            ## by ${{ github.event.client_payload.name }}
-            > ${{ github.event.client_payload.description }}
-          labels: submission
-      ## Allow Allow auto-merge 
-      - name: Enable Pull Request Automerge
-        if: steps.cpr.outputs.pull-request-operation == 'created'
-        uses: peter-evans/enable-pull-request-automerge@v1
-        with:
-          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
-          merge-method: squash
