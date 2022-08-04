@@ -43,5 +43,5 @@ collections:
             - { label: "Téléphone", name: "phone", widget: "string" }
             - { label: "Role dans la société", name: "role", widget: "string" }
             - { label: "Email", name: "email", widget: "string" }
-            - { label: "lien d'une photo", name: "photo", widget: "image" }
+            - { label: "lien d'une photo", name: "photo", widget: "image",  "media_folder":"static/images", allow_multiple: false }
             - { label: "lien linkedIn", name: "linkedIn", widget: "string" }
