@@ -54,6 +54,8 @@ function SpecificContact({ info }: Props) {
       });
     });
   }
+  console.log("./../static/images/in.jpg");
+  console.log();
 
   return (
     <div className={styles.specificContact}>
@@ -61,13 +63,15 @@ function SpecificContact({ info }: Props) {
         <div className={styles.headerContent}>
           <div className={styles.headerInfo}>
             <img
-              src={
-                !!info.contact.photo
-                  ? info.contact.photo.includes("static/images/")
-                    ? require(`${info.contact.photo}`).default
-                    : info.contact.photo
-                  : undefined
-              }
+              src={""}
+              // src={!!info.contact.photo ? info.contact.photo : undefined}
+              // src={
+              //   !!info.contact.photo
+              //     ? info.contact.photo.includes("static/images/")
+              //       ? require(`./${info.contact.photo}`).default
+              //       : info.contact.photo
+              //     : undefined
+              // }
               className={styles.avatar}
               alt="avatar"
             />
