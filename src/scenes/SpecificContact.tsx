@@ -63,7 +63,7 @@ function SpecificContact({ info }: Props) {
             <img
               src={
                 !!info.contact.photo
-                  ? info.contact.photo.startsWith("../../static/images/")
+                  ? info.contact.photo.includes("static/images/")
                     ? require(`${info.contact.photo}`).default
                     : info.contact.photo
                   : undefined
