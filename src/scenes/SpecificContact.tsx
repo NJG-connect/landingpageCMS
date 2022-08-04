@@ -61,7 +61,7 @@ function SpecificContact({ info }: Props) {
         <div className={styles.headerContent}>
           <div className={styles.headerInfo}>
             <img
-              src={info.contact.photo}
+              src={require(`../../static/images/${info.contact.photo}`).default}
               className={styles.avatar}
               alt="avatar"
             />
