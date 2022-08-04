@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React from "react";
 import contactImage, { contactImageType } from "../assets/images/contact";
 import { ContactWithSociety } from "../screens/ContactScreen";
 import styles from "./SpecificContact.module.css";
@@ -54,22 +54,23 @@ function SpecificContact({ info }: Props) {
       });
     });
   }
-  const photo = useMemo(() => {
-    if (!!info.contact.photo) {
-      return info.contact.photo.startsWith("../../static/images/")
-        ? require(`${info.contact.photo}`).default
-        : info.contact.photo;
-    } else {
-      return undefined;
-    }
-  }, [info.contact.photo]);
 
   return (
     <div className={styles.specificContact}>
       <div className={styles.header}>
         <div className={styles.headerContent}>
           <div className={styles.headerInfo}>
-            <img src={photo} className={styles.avatar} alt="avatar" />
+            <img
+              src={
+                !!info.contact.photo
+                  ? info.contact.photo.startsWith("../../static/images/")
+                    ? require(`${info.contact.photo}`).default
+                    : info.contact.photo
+                  : undefined
+              }
+              className={styles.avatar}
+              alt="avatar"
+            />
             <h2>
               {info.contact.firstname} {info.contact.lastname}
             </h2>
