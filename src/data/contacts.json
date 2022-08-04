@@ -11,7 +11,7 @@
       "phone": "07 56 99 74 93",
       "role": "Solution digitale",
       "email": "jonathan@njgconnect.fr",
-      "photo": "../static/images/in.jpg",
+      "photo": "/static/images/in.jpg",
       "linkedIn": "https://www.linkedin.com/in/jonathan-nohile"
     },
     {
@@ -21,7 +21,7 @@
       "phone": "06 35 45 50 28",
       "role": "Solution digitale",
       "email": "jeremy.nohile@gmail.com",
-      "photo": "../static/images/avataaars.png",
+      "photo": "/static/images/avataaars.png",
       "linkedIn": "https://www.linkedin.com/in/jeremynohile"
     },
     {
